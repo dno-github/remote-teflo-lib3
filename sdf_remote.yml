@@ -1,11 +1,8 @@
 
 # -*- coding: utf-8 -*-
 ---
-library:
-  - "git@github.com:JunqiZhang0/remote-teflo-lib.git   as   remote3"
-
 include:
-  - remote3/sdf.yml
+  - sdf.yml
 
 name: py3_include_provision
 description: "Provision step"
