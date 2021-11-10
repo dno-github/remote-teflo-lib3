@@ -1,8 +1,10 @@
 
 # -*- coding: utf-8 -*-
 ---
+library:
+  - "git@github.com:dno-github/remote-teflo-lib3.git as remote1"
 include:
-  - sdf.yml
+  - remote1/sdf.yml
 
 name: py3_include_provision
 description: "Provision step"
@@ -15,15 +17,12 @@ provision:
       ansible_connection: local
 
 
-# orchestrate:
-#   - name: "{{ from_cmd_line }}"
-#     description: "Test teflo" 
-#     orchestrator: ansible
-#     hosts: local_host
-#     ansible_playbook:
-#       name: playbook.yml
-#     ansible_options:
-#       extra_vars:
-#         hello: "{{ hello }}"
-
+orchestrate:
+  - name: "This is an orchestrate fromsdf_remote"
+    description: "Test teflo" 
+    orchestrator: ansible
+    hosts: localhost
+    script:
+      - name: test.sh
+        ignore_rc: true 
 
