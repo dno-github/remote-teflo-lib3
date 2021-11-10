@@ -22,7 +22,7 @@ orchestrate:
     description: "Test teflo" 
     orchestrator: ansible
     hosts: localhost
-    script:
+    ansible_script:
       - name: test.sh
         ignore_rc: true 
 
