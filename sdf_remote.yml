@@ -21,7 +21,7 @@ orchestrate:
   - name: "This is an orchestrate fromsdf_remote"
     description: "Test teflo" 
     orchestrator: ansible
-    hosts: hello_im_remote_lib_provisioned_host
+    hosts: REMOTE_include_provisioned_host
     ansible_script:
       name: test.sh
 
