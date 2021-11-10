@@ -23,6 +23,5 @@ orchestrate:
     orchestrator: ansible
     hosts: localhost
     ansible_script:
-      - name: test.sh
-        ignore_rc: true 
+      name: test.sh
 
